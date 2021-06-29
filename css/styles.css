@@ -841,7 +841,6 @@ header .container {
 
 .modal label {
   display: inline-block;
-  margin-top: 10px;
   margin-bottom: 4px;
   font-weight: normal;
   font-size: 12px;
@@ -853,6 +852,7 @@ header .container {
 .modal-section {
   font-size: 0;
   position: relative;
+  margin-top: 10px;
 }
 
 .person-image {
@@ -920,7 +920,6 @@ textarea::placeholder {
 
 .modal-policy {
   margin-top: 20px;
-  margin-bottom: 30px;
 }
 
 .checkbox {
@@ -945,7 +944,7 @@ textarea::placeholder {
   border-radius: 2px;
   margin-right: 8px;
 
-  transition-property: background-color;
+  transition-property: background-color, border-color;
   transition-duration: var(--duration);
   transition-timing-function: var(--timing-fuction);
 }
@@ -955,6 +954,10 @@ textarea::placeholder {
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
+  border-color: var(--accent-color);
+}
+
+.checkbox:focus + .policy-box {
   border-color: var(--accent-color);
 }
 
@@ -979,6 +982,7 @@ textarea::placeholder {
   display: flex;
   text-align: center;
   justify-content: center;
+  margin-top: 30px;
 }
 
 .modal-button-submit {
